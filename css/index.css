@@ -1,0 +1,62 @@
+/* 05/06/2026 */
+
+.class_btn_nav1{
+     border-left: 6px solid #1b7505;
+}
+
+.class_btn_nav2{
+    border-left: 6px solid #0d1910;
+}
+
+/* Intereses li */
+
+#intereses li{
+    background-color: #f4f6f8;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+#pasos li{
+    background-color: #c9def3;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* multimedia */
+
+#multimedia article{
+    border: 1px solid #c9def3;
+
+}
+
+#multimedia h3{
+    color: #1b7505;
+}
+
+/*  */
+
+main figure{
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px dashed #ddd;
+}
+
+
+section form{
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px dashed #a8a8a7;
+}
+
+/*  */
+
+.nota{
+    background-color: #fff8e6;
+    border-left: 5px solid #dba112;
+    padding: 12px;
+    font-size: 15px;
+}
