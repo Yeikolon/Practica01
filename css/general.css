@@ -1,11 +1,36 @@
-/*Bloque 1 Estilo general de todo*/
-*{
+/* ============================================================
+   general.css
+   Archivo CSS general para TODAS las páginas del sitio.
+   Aquí se colocan estilos compartidos: reinicio básico, etiquetas,
+   navegación, formularios, tablas, multimedia y utilidades.
+
+   Para enseñar poco a poco:
+   1. Copiar este archivo completo.
+   2. Comentar o descomentar bloques según el tema de clase.
+   3. Mostrar cómo cambia la página al guardar y actualizar navegador.
+   ============================================================ */
+
+
+/* ============================================================
+   BLOQUE 1: SELECTOR UNIVERSAL (*)
+   Aplica a todos los elementos HTML.
+   Sirve para controlar el cálculo de tamaños y quitar espacios
+   inesperados del navegador.
+   ============================================================ */
+
+* {
     box-sizing: border-box;
 }
 
-/*Bloque 2 Estilo general del body*/
 
-body{
+/* ============================================================
+   BLOQUE 2: ESTILO GENERAL DEL BODY
+   body representa todo el contenido visible de la página.
+   Aquí se define fuente, color de texto, color de fondo,
+   margen e interlineado.
+   ============================================================ */
+
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f8;
@@ -13,49 +38,64 @@ body{
     line-height: 1.6;
 }
 
-/*Bloque 3 Estilo general de titulos*/
 
-h1{
+/* ============================================================
+   BLOQUE 3: SELECTORES DE ETIQUETA
+   Estos estilos afectan directamente a etiquetas HTML.
+   Ejemplos: h1, h2, p, a, img.
+   ============================================================ */
+
+h1 {
     margin: 0;
     font-size: 34px;
     text-align: center;
 }
 
-h2{
+h2 {
     color: #1b7505;
     margin-top: 0;
     border-bottom: 2px solid #dba112;
     padding-bottom: 6px;
 }
 
-h3{
-    color: #2b2a2a;
+h3 {
+    color: #0d1910;
 }
 
-/*Bloque 4 Estilo general de parrafos*/
-
-p{
+p {
     font-size: 16px;
     text-align: justify;
 }
 
-/* Bloque5 estilo del encabezado*/
+a {
+    color: #1b7505;
+    text-decoration: none;
+}
 
-header{
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ============================================================
+   BLOQUE 4: HEADER Y FOOTER
+   header se usa para el encabezado.
+   footer se usa para el pie de página.
+   ============================================================ */
+
+header {
     background-color: #0d1910;
     color: white;
     padding: 28px 16px;
     text-align: center;
 }
 
-header p{
+header p {
     text-align: center;
     margin-bottom: 0;
 }
 
-/* Bloque 6 estilo del footer*/
-
-footer{
+footer {
     background-color: #0d1910;
     color: white;
     text-align: center;
@@ -63,28 +103,24 @@ footer{
     margin-top: 30px;
 }
 
-footer p{
+footer p {
     text-align: center;
     margin: 5px 0;
 }
 
-footer address{
+footer address {
     font-style: normal;
 }
 
-/* Bloque 7 estilo de navegación */
 
-a{
-    text-decoration: none;
-    color: #1b7505;
-}
+/* ============================================================
+   BLOQUE 5: NAVEGACIÓN
+   nav contiene enlaces internos y externos.
+   display: flex permite ordenar los enlaces en fila.
+   gap crea espacio entre enlaces.
+   ============================================================ */
 
-a:hover{
-    text-decoration: underline;
-    font-size: 20px;
-}
-
-nav{
+nav {
     background-color: #dba112;
     padding: 12px;
     text-align: center;
@@ -94,7 +130,7 @@ nav{
     gap: 12px;
 }
 
-nav a{
+nav a {
     background-color: white;
     color: #0d1910;
     padding: 8px 14px;
@@ -103,21 +139,28 @@ nav a{
     border: 1px solid #a8a8a7;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #1b7505;
     color: white;
     text-decoration: none;
 }
 
-main{
+
+/* ============================================================
+   BLOQUE 6: ESTRUCTURA PRINCIPAL
+   main contiene el contenido principal.
+   section y article organizan bloques de información.
+   ============================================================ */
+
+main {
     width: 90%;
     max-width: 1100px;
     margin: 25px auto;
 }
 
-/* 01 - 06 - 2026 */
-
-section, article, aside{
+section,
+article,
+aside {
     background-color: white;
     padding: 20px;
     margin-bottom: 18px;
@@ -125,106 +168,137 @@ section, article, aside{
     border-radius: 10px;
 }
 
-/* Bloque 8 Aside */
 
-aside{
+/* ============================================================
+   BLOQUE 7: ASIDE
+   aside contiene información complementaria.
+   ============================================================ */
+
+aside {
     width: 90%;
     max-width: 1100px;
     margin: 20px auto;
     background-color: #fff8e6;
 }
 
-aside i{
+aside i {
     margin-right: 8px;
     font-size: 20px;
     color: #1b7505;
 }
 
-/* Bloque 9 Multimedia */
 
-img, video, iframe{
+/* ============================================================
+   BLOQUE 8: IMÁGENES Y MULTIMEDIA
+   max-width evita que las imágenes y videos se salgan
+   del ancho disponible.
+   ============================================================ */
+
+img,
+video,
+iframe {
     max-width: 100%;
     border-radius: 8px;
 }
 
-figure{
+figure {
     text-align: center;
     margin: 0;
 }
 
-figcaption{
+figcaption {
     font-size: 14px;
-    color: #555;
+    color: #555555;
     margin-top: 8px;
 }
 
-/* Bloque 10 listas */
 
-ul,ol{
+/* ============================================================
+   BLOQUE 9: LISTAS
+   ul sirve para listas sin orden.
+   ol sirve para listas ordenadas.
+   ============================================================ */
+
+ul,
+ol {
     padding-left: 28px;
 }
 
-li{
+li {
     margin-bottom: 6px;
 }
 
-/* Bloque 11 Tabla */
 
-table{
+/* ============================================================
+   BLOQUE 10: TABLAS
+   border-collapse une los bordes de las celdas.
+   width: 100% hace que la tabla use todo el ancho disponible.
+   ============================================================ */
+
+table {
     width: 100%;
-    background-color: white;
     border-collapse: collapse;
+    background-color: white;
 }
 
-caption{
+caption {
     font-weight: bold;
     margin-bottom: 10px;
-    color:#0d1910;
+    color: #0d1910;
 }
 
-th{
+th {
     background-color: #1b7505;
     color: white;
     padding: 10px;
 }
 
-td{
-    border: 1px solid #ddd;
+td {
     padding: 10px;
+    border: 1px solid #cccccc;
 }
 
-tr:nth-child(even){
+tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Bloque 12 Formulario */
 
-form{
+/* ============================================================
+   BLOQUE 11: FORMULARIOS
+   input, select, textarea y button son elementos comunes
+   dentro de formularios.
+   ============================================================ */
+
+form {
     margin-top: 12px;
 }
 
-label{
+label {
     font-weight: bold;
 }
 
-input, select, textarea{
+input,
+select,
+textarea {
     width: 100%;
     padding: 9px;
     margin-top: 5px;
     border: 1px solid #a8a8a7;
+    border-radius: 6px;
     font-size: 15px;
 }
 
-input[type = "checkbox"], input[type="radio"]{
+input[type="checkbox"],
+input[type="radio"] {
     width: auto;
     margin-right: 6px;
 }
 
-textarea{
+textarea {
     resize: vertical;
 }
 
-button{
+button {
     background-color: #1b7505;
     color: white;
     border: none;
@@ -234,52 +308,70 @@ button{
     font-weight: bold;
 }
 
-button:hover{
+button:hover {
     background-color: #0d1910;
 }
 
-/* Bloque 13 Atributos y estados de formularios*/
 
-input:focus, select:focus, textarea:focus{
+/* ============================================================
+   BLOQUE 12: ATRIBUTOS Y ESTADOS DE FORMULARIO
+   :focus se activa cuando el usuario selecciona un campo.
+   :required permite explicar campos obligatorios.
+   ============================================================ */
+
+input:focus,
+select:focus,
+textarea:focus {
     outline: 2px solid #dba112;
     border-color: #1b7505;
 }
 
-input:required, select:required, textarea:required{
+input:required,
+select:required,
+textarea:required {
     border-left: 5px solid #dba112;
 }
 
-/* Bloque 14 Semantica que nadie usa */
 
-details{
+/* ============================================================
+   BLOQUE 13: DETAILS, SUMMARY, PROGRESS Y METER
+   Se usan para contenido desplegable y barras de progreso.
+   ============================================================ */
+
+details {
     background-color: #f4f6f8;
-    padding:12px;
+    padding: 12px;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     margin-bottom: 10px;
 }
 
-summary{
+summary {
     cursor: pointer;
     font-weight: bold;
-    color:#1b7505;
+    color: #1b7505;
 }
 
-progress, meter{
+progress,
+meter {
     width: 260px;
     height: 20px;
 }
 
-/* Bloque 15 Texto tecnico */
 
-code{
-    background-color: #eee;
-    color:#b00020;
+/* ============================================================
+   BLOQUE 14: TEXTO TÉCNICO
+   code, pre y kbd ayudan a explicar código dentro de HTML.
+   ============================================================ */
+
+code {
+    background-color: #eeeeee;
+    color: #b00020;
     padding: 2px 5px;
     border-radius: 4px;
 }
 
-pre{
+pre {
     background-color: #0d1910;
     color: white;
     padding: 15px;
@@ -287,12 +379,58 @@ pre{
     overflow-x: auto;
 }
 
-kbd{
-    background-color: #222;
+kbd {
+    background-color: #222222;
     color: white;
     padding: 3px 6px;
     border-radius: 4px;
 }
+
+
+/* ============================================================
+   BLOQUE 15: SELECTORES DE CLASE
+   Una clase se escribe con punto.
+   En HTML se usa así: class="centrado"
+   ============================================================ */
+
+.centrado {
+    text-align: center;
+}
+
+.texto-verde {
+    color: #1b7505;
+}
+
+.texto-dorado {
+    color: #dba112;
+}
+
+.caja-destacada {
+    background-color: #fff8e6;
+    border: 2px solid #dba112;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/* ============================================================
+   BLOQUE 16: SELECTORES DE ID
+   Un id se escribe con numeral.
+   En HTML se usa así: id="objetivo"
+   ============================================================ */
+
+#objetivo {
+    border-left: 6px solid #1b7505;
+}
+
+#intereses {
+    border-left: 6px solid #dba112;
+}
+
+#multimedia {
+    border-left: 6px solid #0d1910;
+}
+
 
 /* ============================================================
    BLOQUE 17: RESPONSIVE BÁSICO
