@@ -1,0 +1,44 @@
+/* Tittles */
+
+h4{
+    color: #dba112;
+}
+
+/* Content*/
+.container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    border: 0;
+}
+
+img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.card p{
+    text-align: center;
+}
+
+/* Table */
+
+progress{
+    width: 100%;
+}
+
+table{
+    text-align: center;
+}
+
