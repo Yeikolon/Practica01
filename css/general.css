@@ -444,13 +444,13 @@ kbd {
     /* Selecciona el menú de navegación */
     nav {
         /* Coloca los elementos del menú uno debajo del otro */
-        flex-direction: column;
+        flex-direction: row;
     }
 
     /* Selecciona cada enlace dentro del menú */
     nav a {
         /* Hace que cada enlace ocupe todo el ancho disponible */
-        width: 100%;
+        width: 25%;
 
         /* Centra el texto dentro de cada enlace */
         text-align: center;
